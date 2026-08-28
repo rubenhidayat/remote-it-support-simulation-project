@@ -21,16 +21,16 @@ The goal isn't just "I can fix a printer", it's to show the full support loop; *
 
 ## Table of Contents
 
-- [01 - Lab Architecture](docs\01-lab-architecture.md)
+- [01 - Lab Architecture](docs/01-lab-architecture.md)
 
-- [02 - Tools and Software Used](docs\02-tools-and-software-used.md)
+- [02 - Tools and Software Used](docs/02-tools-and-software-used.md)
 
-- [03 - Installation and Setup Steps](docs\03-installation-and-setup-steps.md)
+- [03 - Installation and Setup Steps](docs/03-installation-and-setup-steps.md)
 
-- [04 - Simulated Support Scenarios](docs\04-simulated-support-scenarios.md)
+- [04 - Simulated Support Scenarios](docs/04-simulated-support-scenarios.md)
 
-- [05 - Tool Comparison](docs\05-tool-comparison.md)
+- [05 - Tool Comparison](docs/05-tool-comparison.md)
 
 - [06 - Lesson Learned](docs/06-lesson-learned.md)
 
-- [07 - Skills Demonstrated](docs\07-skills-demonstrated.md)
+- [07 - Skills Demonstrated](docs/07-skills-demonstrated.md)
