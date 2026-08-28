@@ -6,12 +6,14 @@
 2. In VirtualBox Manager: Select the VM -> **Settings** -> **Network** -> **Adapter 1** -> **Attached to: Bridged Adapter**, select the host's active physical adapter
 ![alt text](Screenshots/network-setup.png)
 3. Boot the VM, run `ipconfig` to confirm it received a LAN IP (not the `10.0.2.x` NAT range).
+
 ![alt text](Screenshots/vm-ip-address.png)
 4. (Optional) Allow ICMP (Ping) in VM's firewall setting to let host Ping the VM to check the connection by paste the following command in the VM's terminal as an administrator
 ```bash
 netsh advfirewall firewall add rule name="Allow ICMPv4-In" protocol=icmpv4:any,any dir=in action=allow
 ```
 5. From the host, `ping 192.168.18.151` to confirm connectivity
+
 ![alt text](Screenshots/ping-to-vm.png)
 
 ---
@@ -40,5 +42,19 @@ netsh advfirewall firewall add rule name="Allow ICMPv4-In" protocol=icmpv4:any,a
 ![alt text](Screenshots/anydesk-setup-2.png)
 
 4. Insert secure password and click Apply
+
 ![alt text](Screenshots/anydesk-setup-3.png)
 
+## 4. Installing & Configuring TeamViewer and QuickSupport
+
+1. As host machine: Go to `teamviewer.com/download` and download **TeamViewer**
+
+2. Install normally
+
+3. Create an account, if done correctly, it will display a main menu which would look like this:
+![alt text](Screenshots/Teamviewer-menu.png)
+
+4. As VM client: to install **QuickSupport** go to `teamviewer.com/download` and download the installer
+
+5. Run the `.exe` file, if run successfully the main UI should look like this:
+![alt text](Screenshots/quicksupport-menu.png)

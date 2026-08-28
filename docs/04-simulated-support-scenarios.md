@@ -20,12 +20,14 @@
 ![alt text](Screenshots/wrong-ip.png)
 
 4. After clicking **OK**, test by pinging google DNS (8.8.8.8) Server to check internet connection, if it says "Destination host unreachable" means the misconfiguration has been successful
+
 ![alt text](Screenshots/destination-host-unreachable.png)
 
 ### Remote Support Simulation
 
 1. Connect from the host via RDP (`mstsc`)  using the VM's LAN IP and the client's Windows credentials
 ![alt text](Screenshots/rdp-connect.png)
+
 ![alt text](Screenshots/rdp-credentials.png)
 
 2. Reopen **Network Connections** -> **TCP/IPv4 Properties**
@@ -34,6 +36,7 @@
 ![alt text](Screenshots/reset-dns.png)
 
 4. Verify the fix by sending ping to `8.8.8.8`
+
 ![alt text](Screenshots/ping-verify.png)
 
 > **Tool used** : RDP (unattended, direct LAN connection)
@@ -56,6 +59,7 @@
 ![alt text](Screenshots/stop-print-spooler.png)
 
 3. Set **Startup type** to **Disabled** so it doesn't recover on its own
+
 ![alt text](Screenshots/startup-type-disable.png)
 
 4. Confirm the break: Opening any print dialog shows an empty printer dropdown, stuck on "Loading preview"
@@ -70,6 +74,7 @@
 ![alt text](Screenshots/print-spooler-check.png)
 
 3. Set **Startup type** back to **Automatic** and **Start** the service.
+
 ![alt text](Screenshots/set-automatic.png)
 
 4. Confirm resolution weith the end-user via AnyDesk built0in chat feature
@@ -87,6 +92,7 @@
 ### Fault Simulation (on the client VM):
 
 1. Press `Win + R` -> `shell:startup` -> Enter, to open the user Startup folder
+
 ![alt text](Screenshots/shell-startup.png)
 
 2. Create shortcuts pointing to lightweight built-in apps (e.g., `mspaint.exe`, `calc.exe`), duplicating a few for realism.
